@@ -21,12 +21,15 @@ export function Name() {
 
 	const submit = () => {
 		let name;
-		const firstName = firstNameInput.current
+		let firstName = firstNameInput.current
 			? firstNameInput.current.value
 			: "";
-		const secondName = secondNameInput.current
+		let secondName = secondNameInput.current
 			? secondNameInput.current.value
 			: "";
+
+		firstName = firstName.trim();
+		secondName = secondName.trim();
 
 		if (!firstName) {
 			return;
