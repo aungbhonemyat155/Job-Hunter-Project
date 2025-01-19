@@ -21,7 +21,7 @@ export function Layout() {
 
 	return (
 		<section className="w-screen h-screen flex flex-col select-none">
-			<div className="basis-[5%] lg:basis-[8%] bg-slate-200 dark:bg-zinc-900 flex items-center px-3 justify-between">
+			<div className="basis-[5%] lg:basis-[8%] bg-slate-200 dark:bg-zinc-900 flex items-center px-3 justify-between z-50">
 				<h2
 					className="text-sky-800 dark:text-sky-600 text-2xl lg:text-3xl font-extrabold cursor-pointer"
 					onClick={() => {
