@@ -1,13 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./layout/Layout";
 import { Home } from "./pages/Home";
-import { Name } from "./pages/Name";
-import { Role } from "./pages/Role";
-import { Email } from "./pages/Email";
-import { Password } from "./pages/Password";
+import { Name } from "./pages/auth/register/Name";
+import { Role } from "./pages/auth/register/Role";
+import { Email } from "./pages/auth/register/Email";
+import { Password } from "./pages/auth/register/Password";
 import { Testing } from "./pages/Testing";
-import { Login } from "./pages/Login";
+import { Login } from "./pages/auth/login/Login";
 import { Post } from "./pages/Post";
+import { JobCategories } from "./pages/JobCategories";
+import { JobsByCategory } from "./pages/JobsByCategory";
 
 const router = createBrowserRouter([
 	{
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
 			{
 				path: "post/:id",
 				element: <Post />,
+			},
+			{
+				path: "category",
+				element: <JobCategories />,
+			},
+			{
+				path: "category/:categoryName",
+				element: <JobsByCategory />,
 			},
 		],
 	},

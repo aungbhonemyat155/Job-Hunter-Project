@@ -1,4 +1,4 @@
-import fish from "../image/fish.jpg";
+import fish from "../../image/fish.jpg";
 import {
 	MapPinned,
 	CircleDollarSign,

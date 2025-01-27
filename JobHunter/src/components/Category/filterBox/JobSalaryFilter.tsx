@@ -27,15 +27,15 @@ export function JobSalaryFilter() {
 				)}
 			</div>
 			<div
-				className={`transition-all duration-300 flex items-center  ${
+				className={`transition-all duration-300 flex justify-center items-center  ${
 					toggle
 						? "opacity-0 max-h-0 overflow-hidden"
 						: "opacity-100 max-h-screen"
 				}`}>
 				<input
-					type="text"
+					type="number"
 					placeholder="Salary"
-					className="p-1 rounded-md bg-slate-200"
+					className="p-1 rounded-md bg-slate-200 dark:bg-zinc-900"
 				/>
 				<span className="ms-1">MMK</span>
 			</div>

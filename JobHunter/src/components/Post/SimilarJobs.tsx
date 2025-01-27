@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import bg from "../image/bg.jpg";
+import { Button } from "../ui/button";
+import bg from "../../image/bg.jpg";
 
 import { Navigation } from "lucide-react";
 

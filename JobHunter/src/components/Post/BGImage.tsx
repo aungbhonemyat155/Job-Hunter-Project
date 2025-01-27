@@ -1,4 +1,4 @@
-import bg from "../image/bg.jpg";
+import bg from "../../image/bg.jpg";
 
 export function BGImage() {
 	return (

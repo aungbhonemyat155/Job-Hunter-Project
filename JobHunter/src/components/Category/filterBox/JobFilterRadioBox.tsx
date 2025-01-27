@@ -14,8 +14,8 @@ export function JobFilterRadioBox({ header, options }: RadioObject) {
 
 	return (
 		<div>
-			<div className="flex items-center justify-between">
-				<h5 className="font-semibold my-3">{header}</h5>
+			<div className="flex items-center mt-3 justify-between">
+				<h5 className="font-semibold mb-3">{header}</h5>
 				{toggle ? (
 					<ChevronDown
 						className="cursor-pointer"
@@ -46,7 +46,7 @@ export function JobFilterRadioBox({ header, options }: RadioObject) {
 					<div key={index} className="flex items-center space-x-2">
 						<RadioGroupItem value={option} id={`option-${index}`} />
 						<Label
-							className="text-slate-600"
+							className="text-slate-600 dark:text-slate-300"
 							htmlFor={`option-${index}`}>
 							{option}
 						</Label>

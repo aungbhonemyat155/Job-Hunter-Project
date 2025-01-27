@@ -1,15 +1,15 @@
 import { useParams } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
-import { SimilarJobs } from "@/components/SimilarJobs";
-import { BGImage } from "@/components/BGImage";
-import { WorkPositionInfo } from "@/components/WorkPositionInfo";
-import { JobDescription } from "@/components/JobDescription";
-import { OpenGender } from "@/components/OpenGender";
-import { JobRequirements } from "@/components/JobRequirements";
-import { CompanyBenefits } from "@/components/CompanyBenefits";
-import { JobInfo } from "@/components/JobInfo";
-import { JobApplyButton } from "@/components/JobApplyButton";
+import { SimilarJobs } from "@/components/Post/SimilarJobs";
+import { BGImage } from "@/components/Post/BGImage";
+import { WorkPositionInfo } from "@/components/Post/WorkPositionInfo";
+import { JobDescription } from "@/components/Post/JobDescription";
+import { OpenGender } from "@/components/Post/OpenGender";
+import { JobRequirements } from "@/components/Post/JobRequirements";
+import { CompanyBenefits } from "@/components/Post/CompanyBenefits";
+import { JobInfo } from "@/components/Post/JobInfo";
+import { JobApplyButton } from "@/components/Post/JobApplyButton";
 
 export function Post() {
 	const { id } = useParams();

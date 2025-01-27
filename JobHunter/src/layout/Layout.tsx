@@ -20,8 +20,8 @@ export function Layout() {
 	useEffect(changeTheme, [theme]);
 
 	return (
-		<section className="w-screen h-screen flex flex-col select-none">
-			<div className="basis-[5%] lg:basis-[8%] bg-slate-200 dark:bg-zinc-900 flex items-center px-3 justify-between z-50">
+		<section className="max-w-screen min-h-screen flex flex-col select-none ">
+			<div className="bg-slate-200 dark:bg-zinc-900 flex items-center p-3 justify-between z-50 shadow">
 				<h2
 					className="text-sky-800 dark:text-sky-600 text-2xl lg:text-3xl font-extrabold cursor-pointer"
 					onClick={() => {
@@ -29,6 +29,16 @@ export function Layout() {
 					}}>
 					Job Hunter
 				</h2>
+
+				<ul>
+					<Button
+						onClick={() => navigate("/category")}
+						variant={"link"}
+						className="hover:text-blue-900 text-base transition-all duration-300">
+						Jobs by Category
+					</Button>
+				</ul>
+
 				<ul className="dark:text-white text-black flex items-center">
 					<li className="me-3">
 						<Button
@@ -57,7 +67,8 @@ export function Layout() {
 					</li>
 				</ul>
 			</div>
-			<div className="basis-[95%] lg:basis-[92%] bg-slate-300 dark:bg-zinc-800 flex justify-center items-center overflow-y-auto">
+
+			<div className="bg-slate-300 dark:bg-zinc-800 flex justify-center items-center grow">
 				<Outlet />
 			</div>
 		</section>

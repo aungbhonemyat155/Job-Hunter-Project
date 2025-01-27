@@ -37,7 +37,7 @@ export function JobExpatCheckbox() {
 					<Checkbox id="repat" />
 					<label
 						htmlFor="repat"
-						className="text-slate-600 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+						className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
 						Repatriates Preferred
 					</label>
 				</div>
@@ -46,7 +46,7 @@ export function JobExpatCheckbox() {
 					<Checkbox id="expat" />
 					<label
 						htmlFor="expat"
-						className="text-slate-600 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+						className="text-slate-600 dark:text-slate-300 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
 						Open to foreigners (Expats)
 					</label>
 				</div>
